@@ -331,7 +331,7 @@ module.provider("$mdpTimePicker", function() {
                     escapeToClose: true,
                     focusOnOpen: false,
                     trapFocus: false,
-                    zIndex: 2
+                    zIndex: 200
                 };
 
             if (trackedPanels.mdpTimePicker) {
