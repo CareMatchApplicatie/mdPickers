@@ -391,7 +391,7 @@ module.directive("mdpTimePicker", ["$mdpTimePicker", "$timeout", function($mdpTi
             var messages = angular.element(inputContainer[0].querySelector("[ng-messages]"));
             
             scope.type = scope.timeFormat ? "text" : "time"
-            scope.timeFormat = scope.timeFormat || "h:mm A";
+            scope.timeFormat = scope.timeFormat || "HH:mm";
             scope.autoSwitch = scope.autoSwitch || false;
             
             scope.$watch(function() { return ngModel.$error }, function(newValue, oldValue) {
