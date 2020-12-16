@@ -14,6 +14,6 @@ module.directive("ngMessage", ["$mdUtil", function($mdUtil) {
 
             return {};
         }
-    }
+    };
 
 }]);

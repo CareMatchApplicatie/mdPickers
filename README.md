@@ -1,7 +1,7 @@
 # mdPickers
 Material Design date/time pickers built with Angular Material and Moment.js
 
-Note: This repository was forked from [alenaksu/mdPickers](https://github.com/alenaksu/mdPickers) because of [apparent inactivity](https://github.com/alenaksu/mdPickers/issues/192). With version 1.0.0 I merged some important pull requests and added a lot of minor features myself (see [changelog](https://github.com/dpoetzsch/md-pickers/blob/master/CHANGELOG.md) for details). In order to publish the update I renamed the package to `md-pickers` on bower. In the future will do my best to integrate further pull requests.
+Note: This repository was forked from [tradeserve/mdPickers](https://github.com/tradeserve/mdPickers) because of apparent inactivity. With version 1.0.0 I merged some important pull requests and added a lot of minor features myself (see [changelog](https://github.com/CareMatchApplicatie/mdPickers/blob/master/CHANGELOG.md) for details). In order to publish the update I renamed the package to `md-pickers` on bower. In the future will do my best to integrate further pull requests.
 
 ## Online demos
 
@@ -72,6 +72,13 @@ Then run the default gulp task:
 gulp
 # Additionally, you can build the demo
 gulp demo
+```
+
+If you experience signing issues when executing the above commands in a Windows 10 shell, execute the following PowerShell command an retry:
+
+```bash
+# Disable security checks for this PowerShell session
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 ```
 
 To run the demo:

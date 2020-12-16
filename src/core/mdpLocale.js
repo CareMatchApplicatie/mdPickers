@@ -7,6 +7,7 @@ module.factory('$mdpLocale', [function () {
         time: {
             minTime: null,
             maxTime: null,
+            minuteStepping: 1,
             okLabel: "OK",
             cancelLabel: "Cancel",
             timeFormat: "HH:mm",

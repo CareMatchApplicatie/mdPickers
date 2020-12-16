@@ -65,6 +65,8 @@ gulp.task('watch', function() {
     gulp.watch('src/**/*', ['assets', 'build-app']);
 });
 
-gulp.task('default', ['assets', 'build-app']);
+// Original: gulp.task('default', ['assets', 'build-app']);
+gulp.task('default', gulp.series(gulp.parallel('assets', 'build-app')));
 
-gulp.task('demo', ['default', 'build-demo-js', 'build-demo-html']);
+// Original: gulp.task('demo', ['default', 'build-demo-js', 'build-demo-html']);
+gulp.task('demo', gulp.series(gulp.parallel('default', 'build-demo-js', 'build-demo-html')));
